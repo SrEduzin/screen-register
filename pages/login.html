@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Define o conjunto de caracteres -->
+    <meta charset="UTF-8">
+    <!--atualiza o documento a cada 3 segundos-->
+    <!--meta http-equiv="refresh" content="3"-->
+    <!--fornece ao navegador a como controlar as dimensões e as escalas da página.-->
+    <!--para desing responsivo.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/login.css">
+</head>
+<body>
+    <!--seção genérica, usada quando não existe um elemento
+    semântico mais especifico para representa-lo-->
+    <section>
+        <!--envia a entrada do usuário a un servidor-->
+        <form action="../src/login/login.go" method="POST">
+            <h1>Login</h1>
+
+            <div class="container">
+                <label>E-mail</label>
+                <input type="email" required name="Email">
+            </div>
+            <div class="container">
+                <label>password</label>
+                <input type="password" name="senha">
+            </div>
+            <button>Entrar</button>
+            <a href="#">Não consigo entrar</a>
+            <a href="/account">Criar uma conta</a>
+        </form>
+    </section>
+</body>
+</html>

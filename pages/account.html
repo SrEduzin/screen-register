@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Define o conjunto de caracteres -->
+    <meta charset="UTF-8">
+    <!--atualiza o documento a cada 3 segundos-->
+    <!--meta http-equiv="refresh" content="3"-->
+    <!--fornece ao navegador a como controlar as dimensões e as escalas da página.-->
+    <!--para desing responsivo.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/account.css">
+</head>
+<body>
+    <div id="parallelogram"></div>
+    <!--seção genérica, usada quando não existe um elemento
+    semântico mais especifico para representa-lo-->
+    <section>
+        <!--envia a entrada do usuário a um servidor-->
+        <form>
+            <h1>Criar conta</h1>
+            <!--agrupar elementos em um formulário.-->
+            <fieldset>
+                <!--container genérico estilizável com CSS. -->
+                <!--Usado quando não há outra tag container adequada. -->
+                <div class="container">
+
+                    <label for="name">nome</label>
+
+                    <input type="text" required name="name" autofocus id="name" value="Jose">
+                    
+                </div>
+                <div class="container">
+
+                    <label for="sobrenome">lastname</label>
+
+                    <input type="text" required name="lastname" autofocus id="lastname" value="Oliveira">
+                    
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="container">
+                    
+                    <label>E-mail</label>
+                    
+                    <input type="email" required name="email" value="eduardooliveira5@gmail.com">
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="container">
+       
+                    <label>Senha</label>
+
+                    <input type="password" name="password" value="12345678">
+
+                </div>
+                <div class="container">
+       
+                    <label>confirmar senha</label>
+
+                    <input type="password" name="confirmar" value="12345678">
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div id="check">
+
+                    <input type="checkbox" required name="accept">
+
+                    <label>Aceitar os termos de Uso</label>
+
+                </div>
+                <button>Criar conta</button>
+
+            </fieldset>
+            <a href="/termos">Termos de uso</a>
+        </form>
+        <img src="../assets/imagens/userpng.png">
+    </section>
+    <script type="text/javascript" src="../assets/js/account.js"></script>
+</body>
+</html>
